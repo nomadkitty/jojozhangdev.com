@@ -3448,3 +3448,18 @@ input[type="button"]:disabled,
 #oneP {
   width: max-content;
 }
+
+.logoGroup {
+  height: 60px;
+  width: 60px;
+  object-fit: scale-down;
+  margin: 0 20px;
+}
+
+#header {
+  display: none;
+}
+
+#twoP {
+  margin: 0 0 1em 0;
+}

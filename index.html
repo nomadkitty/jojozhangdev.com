@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Jojo Zhang</title>
@@ -70,7 +65,7 @@
           </li>
 
           <li>
-            <a href="hello@jojozhangdev.com" class="icon solid fa-envelope"
+            <a href="mailto: hello@jojozhangdev.com" class="icon solid fa-envelope"
               ><span class="label">Email</span></a
             >
           </li>
@@ -107,19 +102,29 @@
         <section id="two">
           <div class="container">
             <h3>Tech Stack</h3>
-            <p>
-              My tech stack stays in the JavaScript Ecosystem so far.  Majority of my projects are done by React.js and Node.js. 
-            </p>
-            <!-- <ul class="feature-icons">
-              <li class="icon solid fa-code">Write all the code</li>
-              <li class="icon solid fa-cubes">Stack small boxes</li>
-              <li class="icon solid fa-book">Read books and stuff</li>
-              <li class="icon solid fa-coffee">Drink much coffee</li>
-              <li class="icon solid fa-bolt">Lightning bolt</li>
-              <li class="icon solid fa-users">Shadow clone technique</li>
-						</ul> -->
+            <p id="twoP">
+							My tech scope includes mainly JavaScript libraries and frameworks.  Majority of my projects are done by React.js and Node.js. </br>
+							I'm also familiar with Git work flow and npm.
+						</p>
+						<ul>
+							<li>
+								Front-End experience: HTML5, CSS, LESS/SASS, BootStrap, JavaScript, jQuery, React, redux, AJAX
+							</li>
+							<li>
+								Back-End experience: Node.js, Knex, Express, SQLite, PostgreSQL
+							</li>
+						</ul>
+            
 						<div>
-							<img class="logoGroup" src="images/js_logo.png" alt="js logo"/>
+							<img class="logoGroup" src="images/logos/jslogo.png" alt="js logo"/>
+							<img class="logoGroup" src="images/logos/html&css pngbarn.png" alt="http css logos"/>
+							<img class="logoGroup" src="images/logos/reactlogo.png" alt="react logo"/>
+							<img class="logoGroup" src="images/logos/redux-logo.png" alt="redux logo"/>
+							<img class="logoGroup" src="images/logos/jquery-logo-png-jquery-320.png" alt="jquery logo"/>
+							<img class="logoGroup" src="images/logos/Node.js_logo.png" alt="node logo"/>
+							<img class="logoGroup" src="images/logos/745px-Postgresql_elephant.svg.png" alt="postgres logo"/>
+							<img class="logoGroup" src="images/logos/gitlogo.png" alt="git logo"/>
+							<img class="logoGroup" src="images/logos/800px-Npm-logo.svg.png" alt="npm logo"/>						
 						</div>
           </div>
         </section>
@@ -127,7 +132,7 @@
         <!-- Three -->
         <section id="three">
           <div class="container">
-            <h3>A Few Accomplishments</h3>
+            <h3>Projects</h3>
             <p>
               Integer eu ante ornare amet commetus vestibulum blandit integer in
               curae ac faucibus integer non. Adipiscing cubilia elementum
@@ -136,27 +141,30 @@
             <div class="features">
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic01.jpg" alt=""
+                  ><img src="images/20191001_Kickstarter_Success.gif" alt=""
                 /></a>
                 <div class="inner">
                   <h4>Possibly broke spacetime</h4>
                   <p>
                     Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
+										integer in curae ac faucibus integer adipiscing ornare amet.</br>
+										<a href="https://github.com/nomadkitty"><span class="icon brands fa-github" id="headerGithub">  Github Repo</span></a>
+										<a href="https://github.com/nomadkitty"><span class="icon fas fa-link" id="headerGithub">  Live Demo</span></a>
                   </p>
                 </div>
               </article>
               <article>
-                <a href="#" class="image"
-                  ><img src="images/pic02.jpg" alt=""
-                /></a>
+                
                 <div class="inner">
                   <h4>Terraformed a small moon</h4>
                   <p>
                     Integer eu ante ornare amet commetus vestibulum blandit
                     integer in curae ac faucibus integer adipiscing ornare amet.
                   </p>
-                </div>
+								</div>
+								<a href="#" class="image"
+                  ><img src="images/pic02.jpg" alt=""
+                /></a>
               </article>
               <article>
                 <a href="#" class="image"
@@ -564,8 +572,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       <section id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; jojozhangdev.com All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>&copy; jojozhangdev.com</li>
+            <li> All rights reserved.</li>
           </ul>
         </div>
       </section>
@@ -578,6 +586,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#header').fadeIn(2500)
+				})
+		
+		</script>
   </body>
 </html>

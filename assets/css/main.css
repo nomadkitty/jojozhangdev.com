@@ -1806,7 +1806,7 @@ pre code {
 .container {
   margin: 0 auto;
   max-width: calc(100% - 4.5em);
-  width: 45em;
+  width: 50em;
 }
 
 .container.xsmall {
@@ -2932,7 +2932,7 @@ input[type="button"]:disabled,
 }
 
 #main > section > .container {
-  padding: 6em 0 4em 0;
+  padding: 2em 0 2em 0;
 }
 
 #main > section:first-child {
@@ -2946,7 +2946,7 @@ input[type="button"]:disabled,
   border-top: 0;
   color: #c0c0c0;
   overflow: hidden;
-  padding: 4em 0 2em 0;
+  padding: 0;
 }
 
 #footer .copyright {
@@ -3008,7 +3008,7 @@ input[type="button"]:disabled,
   /* Main */
 
   #main > section > .container {
-    padding: 4em 0 2em 0;
+    padding: 2em 0 2em 0;
   }
 }
 
@@ -3280,7 +3280,7 @@ input[type="button"]:disabled,
   /* Features */
 
   .features article .image {
-    display: block;
+    display: flex;
     margin: 0 0 2.25em 0;
     padding-right: 0;
     width: 100%;
@@ -3462,4 +3462,83 @@ input[type="button"]:disabled,
 
 #twoP {
   margin: 0 0 1em 0;
+}
+
+img.projectimg {
+  border-radius: 25px 0 25px 0;
+  width: 300px;
+  height: 100%;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin: 25px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  border-radius: 25px 0 25px 0;
+  background-color: #888;
+  padding-top: 2rem;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back h4 {
+  color: white;
+  margin: 0;
+}
+
+.flip-box-back p {
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+
+.flip-box-back button {
+  background-color: white;
+  border-radius: 5px;
+  color: #4acaa8;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px;
+  width: 35%;
+  margin: 0 10px;
+}
+
+.flip-box-back button:hover {
+  cursor: pointer;
+  background-color: #4acaa8;
+  color: white;
 }

@@ -3466,7 +3466,7 @@ input[type="button"]:disabled,
 
 img.projectimg {
   border-radius: 25px 0 25px 0;
-  width: 300px;
+  width: 260px;
   height: 100%;
 }
 
@@ -3474,14 +3474,15 @@ img.projectimg {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-self: space-between;
   flex-wrap: wrap;
 }
 
 .flip-box {
   background-color: transparent;
-  width: 300px;
+  width: 30%;
   height: 200px;
-  margin: 25px;
+  margin: 25px 12px;
 }
 
 .flip-box-inner {
@@ -3509,7 +3510,7 @@ img.projectimg {
 
 .flip-box-back {
   border-radius: 25px 0 25px 0;
-  background-color: #888;
+  background-color: rgb(163, 161, 161);
   padding-top: 2rem;
   transform: rotateY(180deg);
 }
@@ -3534,11 +3535,36 @@ img.projectimg {
   font-size: 16px;
   padding: 5px;
   width: 35%;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 .flip-box-back button:hover {
   cursor: pointer;
   background-color: #4acaa8;
   color: white;
+}
+
+#bannerImg {
+  animation: slide-in-blurred-left 2.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }

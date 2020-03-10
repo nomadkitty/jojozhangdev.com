@@ -2759,7 +2759,7 @@ input[type="button"]:disabled,
   -ms-justify-content: space-between;
   justify-content: space-between;
   background: #4acaa8;
-  color: #d2f2e9;
+  color: white;
   height: 100%;
   overflow-y: auto;
   position: fixed;
@@ -2788,7 +2788,7 @@ input[type="button"]:disabled,
 }
 
 #header header p {
-  color: #b7eadc;
+  color: white;
 }
 
 #header a {
@@ -2819,7 +2819,7 @@ input[type="button"]:disabled,
 }
 
 #header > header p {
-  color: #d2f2e9;
+  color: white;
   font-style: italic;
   margin: 1em 0 0 0;
 }
@@ -2840,7 +2840,7 @@ input[type="button"]:disabled,
 }
 
 #header > footer .icons li a {
-  color: #b7eadc;
+  color: white;
 }
 
 #header > nav {
@@ -2860,6 +2860,7 @@ input[type="button"]:disabled,
   border-top: solid 2px #5ccfb1;
   display: block;
   padding: 0;
+  font-weight: 600;
 }
 
 #header > nav ul li a {
@@ -3434,9 +3435,9 @@ img.projectimg {
 
 .flip-box {
   background-color: transparent;
-  width: 30%;
+  width: 31%;
   height: 200px;
-  margin: 25px 12px;
+  margin: 25px 8px;
 }
 
 .flip-box-inner {
@@ -3520,6 +3521,12 @@ img.projectimg {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .flip-box {
+    width: 46%;
   }
 }
 

@@ -2149,6 +2149,11 @@ input[type="radio"] + label:before {
   position: relative;
 }
 
+.image:hover {
+  transform: scale(1.2);
+  box-shadow: 4px 4px 10px gray;
+}
+
 .image[data-position] img {
   -moz-object-fit: cover;
   -webkit-object-fit: cover;
@@ -2254,7 +2259,7 @@ input[type="radio"] + label:before {
 }
 
 .image img {
-  border-radius: 5px;
+  border-radius: 10px;
   display: block;
 }
 
@@ -2741,6 +2746,46 @@ input[type="button"]:disabled,
   color: #fff !important;
   cursor: default;
   opacity: 0.25;
+}
+
+/* Features */
+
+.features article {
+  border-top: solid 3px #f4f4f4;
+  margin-bottom: 2.25em;
+  padding-top: 2.25em;
+}
+
+.features article:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.features article .image {
+  display: inline-block;
+  margin-right: 2.5em;
+  vertical-align: middle;
+  width: 37%;
+}
+
+.features article .image img {
+  display: block;
+  width: 100%;
+}
+
+.features article .inner {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.features article .inner > :last-child {
+  margin-bottom: 0;
+}
+
+.features article p {
+  line-height: initial;
+  margin-bottom: 1rem;
 }
 
 /* Header */
@@ -3243,6 +3288,20 @@ input[type="button"]:disabled,
     font-size: 1.5em;
   }
 
+  /* Features */
+
+  .features article .image {
+    display: block;
+    margin: 0 0 2.25em 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .features article .inner {
+    display: block;
+    width: 100%;
+  }
+
   /* Header */
 
   #header {
@@ -3417,7 +3476,7 @@ input[type="button"]:disabled,
   margin: 0 0 1em 0;
 }
 
-img.projectimg {
+.projectimg {
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -3481,22 +3540,23 @@ img.projectimg {
   margin: 0;
 }
 
-.flip-box-back button {
-  background-color: white;
+.inner button {
+  background-color: #4acaa8;
   border-radius: 5px;
-  color: #4acaa8;
+  color: white;
   border: none;
   text-decoration: none;
   font-size: 16px;
   padding: 5px;
-  width: 35%;
-  margin: 5px 10px;
+  width: 20%;
+  margin: 5px 20px 5px 0px;
 }
 
-.flip-box-back button:hover {
+.inner button:hover {
   cursor: pointer;
-  background-color: #4acaa8;
-  color: white;
+  background-color: white;
+  color: #4acaa8;
+  border: 2px solid #4acaa8;
 }
 
 #bannerImg {

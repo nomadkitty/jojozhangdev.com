@@ -2149,11 +2149,6 @@ input[type="radio"] + label:before {
   position: relative;
 }
 
-.image:hover {
-  transform: scale(1.2);
-  box-shadow: 4px 4px 10px gray;
-}
-
 .image[data-position] img {
   -moz-object-fit: cover;
   -webkit-object-fit: cover;
@@ -2766,6 +2761,11 @@ input[type="button"]:disabled,
   margin-right: 2.5em;
   vertical-align: middle;
   width: 37%;
+}
+
+.features article .image:hover {
+  transform: scale(1.2);
+  box-shadow: 4px 4px 10px gray;
 }
 
 .features article .image img {
@@ -3493,6 +3493,8 @@ input[type="button"]:disabled,
   background-color: white;
   color: #4acaa8;
   border: 2px solid #4acaa8;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px gray;
 }
 
 #bannerImg {
